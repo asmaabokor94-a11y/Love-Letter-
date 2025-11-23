@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Love Letter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <button onclick="openPage('letter')">💜 Love Letter</button>
+        <button onclick="openPage('music')">🎵 Music</button>
+        <button onclick="openPage('notes')">📝 Notes</button>
+        <button onclick="openPage('gallery')">📸 Gallery</button>
+    </div>
+
+    <div id="letter" class="page">
+        <h1>My Dearest 💜</h1>
+        <p class="text-box">
+            A Letter For You...
+        </p>
+    </div>
+
+    <div id="music" class="page" style="display:none;">
+        <h1>Our Song 🎶</h1>
+        <audio controls>
+            <source src="yoursong.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <div id="notes" class="page" style="display:none;">
+        <h1>Notes for You 💌</h1>
+        <textarea placeholder="Write something sweet here..."></textarea>
+    </div>
+
+    <div id="gallery" class="page" style="display:none;">
+        <h1>Our Memories 📷💜</h1>
+        <input type="file" multiple>
+    </div>
+
+<script src="script.js"></script>
+</body>
+          </html>
